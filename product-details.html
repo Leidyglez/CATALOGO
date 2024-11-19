@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITSC - Instituto Técnico Superior Comunitario</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/product-details.css">
+</head>
+<body>
+  <header class="header"> 
+    <div class="header-content">
+      <img src="Images/Logo-ITSC.png" alt="Logo ITSC" class="logo">
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class='bx bx-menu'></i>
+      </button>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="/">Portal ITSC</a></li>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="index.html#catalog">Catálogo</a></li>
+          <li><a href="index.html#about">Sobre Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Producto Principal -->
+    <section class="product-main">
+      <h2 class="product-not-found">Producto no encontrado.</h2>
+    </section>
+
+    <section class="featured-products">
+      <div class="container">
+        <h2>Productos Relacionados</h2>
+        <p class="section-description"></p>
+        
+        <div class="swiper">
+          <div class="swiper-wrapper" id="swiper-wrapper">
+            
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+          <img src="Images/Logo-ITSC.png" alt="Logo-ITSC">
+          <address>
+              Instituto Técnico Superior Comunitario<br>
+              Carretera Mella KM. 14 Esquina, Francisco Del Rosario Sánchez, San Luis,<br>
+              Santo Domingo Este<br>
+              Tel.: (809)-475-4872<br>
+              info@itsc.edu.do
+          </address>
+          <p>©2024 Todos los derechos reservados</p>
+      </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/products-array.js"></script>
+  <script src="js/product-details.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - ITSC</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content container">
+      <img src="Images/Logo-ITSC.png" alt="Logo ITSC" class="logo">
+      <button class="menu-toggle" aria-label="Alternar menú" aria-expanded="false" aria-controls="nav-menu">
+        <i class='bx bx-menu'></i>
+      </button>
+      <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li><a href="/">Portal ITSC</a></li>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/index.html#catalog" aria-current="page">Catálogo</a></li>
+          <li><a href="/index.html#about">Sobre Nosotros</a></li>
+          <li><a href="/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="catalog-page">
+    <div class="container">
+      <h1>Catálogo de Diseños</h1>
+      
+      <nav class="catalog-nav" aria-label="Categorías de productos">
+        <ul>
+          <li><button class="category-button active" data-category="urban">Urbano</button></li>
+          <li><button class="category-button" data-category="bridal">Nupcial</button></li>
+          <li><button class="category-button" data-category="gala">Gala</button></li>
+          <li><button class="category-button" data-category="accessories">Accesorios</button></li>
+        </ul>
+      </nav>
+
+      <section id="urban" class="category-section active">
+        <h2>Colección Urbana</h2>
+        <p class="section-description">Explora nuestras últimas tendencias urbanas con prendas modernas y cómodas.</p>
+        <div class="product-grid"></div>
+      </section>
+      <section class="featured-products">
+        <div class="swiper">
+          <div class="swiper-wrapper" id="swiper-wrapper">
+            
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <img src="Images/Logo-ITSC.png" alt="Logo ITSC" class="logo">
+          <p>Instituto Técnico Superior Comunitario</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contacto</h3>
+          <address>
+            Carretera Mella KM. 14 Esquina<br>
+            Francisco Del Rosario Sánchez, San Luis<br>
+            Santo Domingo Este<br>
+            Tel.: <a href="tel:+18094754872">(809)-475-4872</a><br>
+            <a href="mailto:info@itsc.edu.do">info@itsc.edu.do</a>
+          </address>
+        </div>
+        <div class="footer-section">
+          <h3>Enlaces Rápidos</h3>
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="index.html#catalog">Catálogo</a></li>
+            <li><a href="index.html#about">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;2024 Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/products-array.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>
