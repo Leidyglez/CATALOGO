@@ -20,6 +20,7 @@ function initializeProductGrid() {
     });
   }
   
+  
   // Modal functionality
   const modal = document.getElementById('product-modal');
   const closeModal = document.querySelector('.close-modal');
