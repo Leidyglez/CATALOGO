@@ -48,7 +48,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "urban",
-      date: "Noviembre 2024",
+      date: "2024-11-12",
       matricula: "aaaa1000",
       description: {
         text: "Un diseño inspirado en los estilos urbanos más modernos.",
@@ -74,7 +74,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "bridal",
-      date: "Febrero 2024",
+      date: "2024-11-12",
       matricula: "bbbb2000",
       description: {
         text: "Un vestido diseñado para ocasiones especiales.",
@@ -100,7 +100,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "casual",
-      date: "Abril 2024",
+      date: "2024-11-12",
       matricula: "cccc3000",
       description: {
         text: "Perfecto para los días soleados de verano.",
@@ -126,7 +126,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "formal",
-      date: "Septiembre 2024",
+      date: "2024-11-12",
       matricula: "dddd4000",
       description: {
         text: "Diseñado para destacar en entornos laborales.",
@@ -141,6 +141,7 @@ var productJson = [
       collection: "Colección Invierno 2024",
       collectionId: "urban",
       author: "Autor 5",
+      date: "2024-11-12",
       images: [
         "Products/1.jpeg",
         "Products/2.jpeg",
@@ -167,6 +168,7 @@ var productJson = [
       collection: "Colección Noche 2024",
       collectionId: "urban",
       author: "Autor 6",
+      date: "2024-11-12",
       images: [
         "Products/3.jpeg",
         "Products/2.jpeg",
@@ -193,6 +195,7 @@ var productJson = [
       collection: "Colección Deportiva 2024",
       collectionId: "urban",
       author: "Autor 7",
+      date: "2024-11-12",
       images: [
         "Products/5.jpeg",
         "Products/2.jpeg",
@@ -219,6 +222,7 @@ var productJson = [
       collection: "Colección Fiesta 2024",
       collectionId: "urban",
       author: "Autor 8",
+      date: "2024-11-12",
       images: [
         "Products/1.jpeg",
         "Products/2.jpeg",
@@ -245,6 +249,7 @@ var productJson = [
       collection: "Colección Urbana 2024",
       collectionId: "urban",
       author: "Autor 9",
+      date: "2024-11-12",
       images: [
         "Products/1.jpeg",
         "Products/2.jpeg",
@@ -271,6 +276,7 @@ var productJson = [
       collection: "Colección Urbana 2024",
       collectionId: "urban",
       author: "Autor 10",
+      date: "2024-12-12",
       images: [
         "Products/1.jpeg",
         "Products/2.jpeg",
@@ -308,7 +314,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "urban",
-      date: "Mayo 2024",
+      date: "2024-12-24",
       matricula: "mmmm19000",
       description: {
         text: "Un diseño fresco inspirado en el arte callejero.",
@@ -323,6 +329,7 @@ var productJson = [
       collection: "Colección Urbana 2024",
       collectionId: "urban",
       author: "Autor 12",
+      date: "2024-12-31",
       images: [
         "Products/1.jpeg",
         "Products/2.jpeg",
@@ -349,6 +356,7 @@ var productJson = [
       collection: "Colección Urbana 2024",
       collectionId: "urban",
       author: "Autor 13",
+      date: "2024-11-12",
       images: [
         "Products/1.jpeg",
         "Products/2.jpeg",
@@ -386,7 +394,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "urban",
-      date: "Agosto 2024",
+      date: "2024-11-12",
       matricula: "pppp22000",
       description: {
         text: "Un guiño al estilo deportivo de los 90s.",
@@ -412,7 +420,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "urban",
-      date: "Septiembre 2024",
+      date: "2024-11-12",
       matricula: "qqqq23000",
       description: {
         text: "Diseño versátil para complementar cualquier outfit.",
@@ -427,6 +435,7 @@ var productJson = [
       collection: "Colección Urbana 2024",
       collectionId: "urban",
       author: "Autor 16",
+      date: "2024-11-12",
       images: [
         "Products/1.jpeg",
         "Products/2.jpeg",
@@ -453,6 +462,7 @@ var productJson = [
       collection: "Colección Urbana 2024",
       collectionId: "urban",
       author: "Autor 17",
+      date: "2024-11-12",
       images: [
         "Products/3.jpeg",
         "Products/2.jpeg",
@@ -479,6 +489,7 @@ var productJson = [
       collection: "Colección Urbana 2024",
       collectionId: "urban",
       author: "Autor 18",
+      date: "2024-11-12",
       images: [
         "Products/1.jpeg",
         "Products/2.jpeg",
@@ -505,6 +516,7 @@ var productJson = [
       collection: "Colección Urbana 2024",
       collectionId: "urban",
       author: "Autor 19",
+      date: "2024-11-12",
       images: [
         "Products/1.jpeg",
         "Products/2.jpeg",
@@ -531,6 +543,7 @@ var productJson = [
       collection: "Colección Urbana 2024",
       collectionId: "urban",
       author: "Autor 20",
+      date: "2024-11-12",
       images: [
         "Products/1.jpeg",
         "Products/2.jpeg",
@@ -568,7 +581,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "urban",
-      date: "Mayo 2024",
+      date: "2024-11-12",
       matricula: "URB202421",
       description: {
         text: "Ideal para combinar con cualquier look urbano.",
@@ -583,6 +596,7 @@ var productJson = [
       collection: "Colección Urbana 2024",
       collectionId: "urban",
       author: "Autor 22",
+      date: "2024-11-12",
       images: [
         "Products/1.jpeg",
         "Products/2.jpeg",
@@ -609,6 +623,7 @@ var productJson = [
       collection: "Colección Urbana 2024",
       collectionId: "urban",
       author: "Autor 23",
+      date: "2024-11-12",
       images: [
         "Products/1.jpeg",
         "Products/2.jpeg",
@@ -635,6 +650,7 @@ var productJson = [
       collection: "Colección Urbana 2024",
       collectionId: "urban",
       author: "Autor 24",
+      date: "2024-11-12",
       images: [
         "Products/1.jpeg",
         "Products/2.jpeg",
@@ -646,7 +662,6 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "urban",
-      date: "Agosto 2024",
       matricula: "URB202424",
       description: {
         text: "Calzado urbano diseñado para máximo confort.",
@@ -672,7 +687,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "urbano",
-      date: "Enero 2018",
+      date: "2024-11-12",
       matricula: "jjjj10000",
       description: {
         text: "Un conjunto que combina estilo clásico y formalidad.",
@@ -700,7 +715,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "beachwear",
-      date: "Junio 2024",
+      date: "2024-11-12",
       matricula: "iiii9000",
       description: {
         text: "Perfecto para disfrutar en la playa.",
@@ -726,7 +741,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "formal",
-      date: "Enero 2025",
+      date: "2024-11-12",
       matricula: "jjjj10000",
       description: {
         text: "Un conjunto que combina estilo clásico y formalidad.",
@@ -752,7 +767,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "formal",
-      date: "Enero 2018",
+      date: "2024-11-12",
       matricula: "jjjj10000",
       description: {
         text: "Un conjunto que combina estilo clásico y formalidad.",
@@ -779,7 +794,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "formal",
-      date: "Enero 2017",
+      date: "2024-11-12",
       matricula: "jjjj10000",
       description: {
         text: "Un conjunto que combina estilo clásico y formalidad.",
@@ -805,7 +820,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "formal",
-      date: "Enero 2017",
+      date: "2024-11-12",
       matricula: "jjjj10000",
       description: {
         text: "Un conjunto que combina estilo clásico y formalidad.",
@@ -831,7 +846,7 @@ var productJson = [
         "Products/8.jpeg"
       ],
       category: "formal",
-      date: "Enero 2017",
+      date: "2024-11-12",
       matricula: "jjjj10000",
       description: {
         text: "Un conjunto que combina estilo clásico y formalidad.",

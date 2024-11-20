@@ -5,7 +5,7 @@
     --accent-color: #666;
     --text-color: #333;
     --light-text: #fff;
-    --background-color: #fff;
+    --background-color: #bf2026;
     --gray-bg: #f5f5f5;
     --border-color: #e5e5e5;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -32,7 +32,7 @@
   /* Header */
   .header {
     background: var(--background-color);
-    box-shadow: var(--shadow);
+    box-shadow: var(--light-text);
     position: fixed;
     width: 100%;
     top: 0;
@@ -68,7 +68,7 @@
   }
   
   .nav-menu a {
-    color: var(--text-color);
+    color: #ffffff;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
@@ -76,7 +76,7 @@
   
   .nav-menu a:hover,
   .nav-menu a.active {
-    color: var(--accent-color);
+    color: var(--primary-color);
   }
   
   /* Hero Section */
@@ -316,8 +316,19 @@
   }
   
   .values-section {
-    padding: 4rem 0;
     background: var(--gray-bg);
+    padding: 4rem 0;
+    position: relative;
+    width: 100vw; /* Asegura que el fondo cubra todo el ancho de la pantalla */
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw; /* Resetea el margen para expandir el fondo */
+  }
+  
+  .container {
+    max-width: 1200px; /* Limita el ancho de las tarjetas */
+    margin: 0 auto; /* Centra las tarjetas en la pantalla */
+    padding: 0 2rem; /* Opcional: Añade algo de padding lateral para pantallas más pequeñas */
   }
   
   .values-grid {
@@ -328,11 +339,16 @@
   }
   
   .value-card {
-    background: var(--background-color);
+    background: var(--light-text);
     padding: 2rem;
     border-radius: 0.5rem;
     text-align: center;
     box-shadow: var(--shadow);
+    transition: transform 0.3s ease; /* Efecto hover */
+  }
+  
+  .value-card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de toda la tarjeta */
   }
   
   .value-card i {
@@ -351,6 +367,7 @@
   
   .footer-grid {
     display: grid;
+    min-height: 100dvh;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
@@ -388,39 +405,6 @@
   }
   
 
-  /* Modal */
-  .modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 1100;
-  }
-  
-  .modal.active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .modal-content {
-    background: var(--background-color);
-    width: 90%;
-    max-width: 1000px;
-    border-radius: 0.5rem;
-    position: relative;
-  }
-  
-  .close-modal {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    font-size: 2rem;
-    cursor: pointer;
-    z-index: 1;
-    color: var(--light-text);
-  }
-  
   /* Responsive Design */
   @media (max-width: 768px) {
     .menu-toggle {
@@ -473,7 +457,7 @@
 /* SWIPPER DEFAULT LAPTOP*/ 
 .swiper-content{
  
-  background-color: gray;
+  background-color: #666;
   display: block;
   height: 200px;
 }
@@ -497,7 +481,7 @@
 
 
 .swiper-button-next, .swiper-button-prev{
-  background: red;
+  background: #666;
   border-radius: 15px;
   height: 27px;
   width: 27px;
@@ -525,6 +509,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
   
   .product-title {
     font-size: 18px;
@@ -532,35 +517,15 @@
 
   .product-collection{
     color: #3f3e3eab;
-    font-size: 14px
+    font-size: 14px;
   }
 
   .product-author{
     color: #3f3e3eab;
-    font-size: 14px
+    font-size: 14px;
   }
 
-  .details-btn {
-    display: inline-block;
-    background-color: red; /* Red background for the button */
-    color: white;  /* White text */
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none; 
-    border-radius: 5px;  /* Rounded corners */
-    margin-top: 15px;  /* Space between content and button */
-    transition: background-color 0.3s ease;  /* Smooth hover effect */
-  }
 
-  .details-btn:hover {
-    background-color: darkred;  /* Darker red on hover */
-  }
-
-}
-
-
-/* Estilo para ocultar elementos */
 .d-none {
-  display: none; /* Oculta el elemento */
+  display: none; 
 }

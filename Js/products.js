@@ -15,20 +15,21 @@ productJson.forEach(product => {
 
   let firstImage = product.images[0];
   slide.innerHTML = ` 
-    <div class="product-info">
-      <img src="${firstImage}" alt="${product.title}" class="product-image">
-      <h4 class="product-title">${product.title}</h4>
-      <p class="product-collection">${product.collection}</p>
-      <p class="product-author"><strong>Autor:</strong> ${product.author}</p>
-      <a href="product-details.html?id=${product.id}" class="details-btn">Detalles</a>
-    <div>
+    <a href="product-details.html?id=${product.id}" class="product-card-link">
+      <div class="product-info">
+        <img src="${firstImage}" alt="${product.title}" class="product-image">
+        <h4 class="product-title">${product.title}</h4>
+        <p class="product-collection">${product.collection}</p>
+        <p class="product-author"><strong>Autor:</strong> ${product.author}</p>
+      </div>
+    </a>
   `;
 
   swiperWrapper.appendChild(slide);
 });
 
   
-// Initialize Swiper if on homepage
+// Initialize Swiper 
 const productSlider = document.querySelector('.swiper');
 if (productSlider) {
   new Swiper('.swiper', {
