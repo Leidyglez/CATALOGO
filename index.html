@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITSC - Instituto Técnico Superior Comunitario</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header"> 
+    <div class="header-content">
+      <img src="Images/Logo-ITSC.png" alt="Logo ITSC" class="logo">
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class='bx bx-menu'></i>
+      </button>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="/">Portal ITSC</a></li>
+          <li><a href="/" class="active">Inicio</a></li>
+          <li><a href="index.html#catalog">Catálogo</a></li>
+          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image">
+        <img src="Images/DMODA.jpeg" alt="Hero">
+        <div class="overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1>Escuela de<br>
+          <span>Diseño de Modas</span>
+        </h1>
+        <p>Descubre las últimas creaciones de nuestros talentosos estudiantes y diseñadores</p>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <div class="container">
+        <h2>Últimas Creaciones</h2>
+        <p class="section-description">Explora los diseños más recientes de nuestros estudiantes</p>
+        <section class="product-main" id="product-main">
+
+          <div class="product-titles" id="product-titles">
+              <h2 id="category-title" class="category-title">
+                  <img id="category-icon" class="category-icon" src="" alt="Category Icon" />
+                  <span id="category-title-text"></span>
+              </h2>
+              <p id="category-description" class="category-description"></p>
+  
+          </div>
+    
+          <section class="products" id="products-container">
+              <h4 id="products-not-found" class="product-not-found d-none">Categoria no tiene productos.</h2>
+         
+          </section>
+      </section>
+      </div>
+    </section>
+
+    <section id="catalog" class="categories">
+      <div class="container">
+        <h2>Categorías</h2>
+        <div id="category-container" class="category-grid">
+          
+        </div>
+      </div>
+    </section>
+    
+    <section id="about" class="about-content">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>Nuestra Historia</h2>
+            <p>El Instituto Técnico Superior Comunitario (ITSC) ha sido pionero en la formación de profesionales en el área de diseño de modas en la República Dominicana. Desde nuestra fundación, nos hemos dedicado a cultivar el talento creativo y técnico de nuestros estudiantes.</p>
+            <p>Nuestra escuela de diseño de modas combina la tradición artesanal con las últimas tendencias y tecnologías del sector, preparando a nuestros estudiantes para destacar en la industria de la moda nacional e internacional.</p>
+          </div>
+          <div class="about-image">
+            <img src="Images/IMG_9880-scaled.jpg" alt="Taller de Diseño">
+          </div>
+        </div>
+    
+        <div class="values-section">
+          <h2>Nuestros Valores</h2>
+          <div class="values-grid">
+            <div class="value-card">
+              <i class='bx bx-bulb'></i>
+              <h3>Creatividad</h3>
+              <p>Fomentamos la expresión creativa y la innovación en cada diseño</p>
+            </div>
+            <div class="value-card">
+              <i class='bx bx-book-open'></i>
+              <h3>Excelencia</h3>
+              <p>Buscamos la excelencia en cada aspecto de nuestra enseñanza</p>
+            </div>
+            <div class="value-card">
+              <i class='bx bx-globe'></i>
+              <h3>Sostenibilidad</h3>
+              <p>Promovemos prácticas sostenibles en la industria de la moda</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>  
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <img src="Images/Logo-ITSC.png" alt="Logo-ITSC">
+        <address>
+            Instituto Técnico Superior Comunitario<br>
+            Carretera Mella KM. 14 Esquina, Francisco Del Rosario Sánchez, San Luis,<br>
+            Santo Domingo Este<br>
+            Tel.: (809)-475-4872<br>
+            info@itsc.edu.do
+        </address>
+        <p>©2024 Todos los derechos reservados</p>
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/products-array.js"></script>
+  <script src="js/category.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

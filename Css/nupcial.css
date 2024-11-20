@@ -1,0 +1,116 @@
+/* Catalog styles */
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4 cards per row by default */
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 0.8rem; /* Reduced text size */
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for product image */
+  .product-img {
+    width: 100%;
+    height: 300px; /* Adjust image height to make it more prominent */
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styling for product information */
+  .product-info {
+    text-align: left;
+    margin-top: 1rem;
+  }
+  
+  .product-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+  
+  .product-author,
+  .product-collection,
+  .product-year {
+    font-size: 0.75rem;  /* Smaller text for better balance with image */
+    margin: 0.3rem 0;
+  }
+
+  /* Pagination Container */
+.pagination {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    margin-top: 2rem;
+  }
+  
+  .page-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .page-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .page-btn:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
+  
+  .prev-btn, .next-btn {
+    font-weight: bold;
+  }
+  
+
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .catalog {
+      grid-template-columns: repeat(3, 1fr);  /* 3 cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .catalog {
+      grid-template-columns: repeat(2, 1fr);  /* 2 cards per row on small screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .catalog {
+      grid-template-columns: 1fr;  /* 1 card per row on extra small screens */
+    }
+  
+    .product-img {
+      height: 220px;  /* Adjust image height for small screens */
+    }
+  
+    .product-name {
+      font-size: 0.9rem; /* Reduce name font size for small screens */
+    }
+  }

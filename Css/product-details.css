@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Principal Product */
+.product-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+/* 360 Viewer */
+.card {
+    position: relative;
+    width: 596px;
+    height: 596px;
+    display: flex;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.card span {
+    position: absolute;
+    top: 0;
+    left: calc(100% / 8 * var(--i));
+    width: calc(100% / 8);
+    height: 100%;
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: contain;
+    opacity: 0;
+}
+
+.card img:first-of-type {
+    opacity: 1;
+}
+
+.card img:nth-child(2),
+.card span:hover + img {
+    opacity: 1;
+}
+
+.card .viewer-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+/* Ocultar el icono al pasar el mouse sobre la tarjeta */
+.card:hover .viewer-icon {
+    opacity: 0;
+}
+
+/* Products Details */
+.product-details {
+    max-width: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-details h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-details p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* Descripción Expandible */
+.container-description {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: flex-start;
+    /* gap: 20px;
+    padding: 20px; */
+}
+
+.title-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title-description h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Productos Relacionados */
+.related{
+    padding: 4rem 0;
+    background: var(--gray-bg);
+}
+  
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+  
+.related-card {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+}
+  
+.related-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+  
+.related-card:hover img {
+    transform: scale(1.1);
+}
+
+.d-none {
+    display: none 
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .product-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .product-details {
+        text-align: center;
+    }
+
+    .carousel-item {
+        flex: 0 0 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item {
+        flex: 0 0 100px;
+        height: 100px;
+    }
+}
